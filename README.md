@@ -1,6 +1,6 @@
 # Measurement-Converter
 Measurement Converter that converts between various units like length, weight, temperature, and volume. The program will present a menu for the user to choose the type of conversion, then allow the user to input values for conversion.
-# Conversion functions
+
 def convert_length(value, from_unit, to_unit):
     conversions = {
         'm': {'km': value / 1000, 'cm': value * 100, 'mm': value * 1000, 'ft': value * 3.28084, 'in': value * 39.3701},
@@ -48,7 +48,6 @@ def convert_volume(value, from_unit, to_unit):
     }
     return conversions[from_unit][to_unit]
 
-# Main program loop
 def measurement_converter():
     while True:
         print("\nWelcome to the Measurement Converter!")
